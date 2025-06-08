@@ -5,3 +5,4 @@ MVP:
 4. decryption on a per-credential basis
 5. option for strong auto-password generation
 6. zero knowledge master password
+7. option to change master password
