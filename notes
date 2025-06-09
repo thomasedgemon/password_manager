@@ -6,3 +6,5 @@ MVP:
 5. option for strong auto-password generation
 6. zero knowledge master password
 7. option to change master password
+8. display session memory
+9. auto-remove displays passwords after 10s or less, and remove them from in-session memory.
