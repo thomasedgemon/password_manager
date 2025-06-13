@@ -22,4 +22,7 @@ next things to do:
 2. build out reading from and writing to ciphertext csv. do not encrypt common names, only passwords. 
 3. determine how to reference a common name. probably as a drop-down to select from.
 4. functionality to add a password.
-5. functionality to rm a password. 
+5. functionality to rm a password.
+6. functionality to generate a new password for the user, where they
+   can choose length. will force alphanumeric with special characters.
+   probably use os.urandom for maximal entropy/domain space  
