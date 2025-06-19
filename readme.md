@@ -26,3 +26,5 @@ next things to do:
 6. functionality to generate a new password for the user, where they
    can choose length. will force alphanumeric with special characters.
    probably use os.urandom for maximal entropy/domain space  
+7. ability to import from flashdrive for porting to another machine
+   
