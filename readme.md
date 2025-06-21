@@ -1,27 +1,49 @@
-Stateless password manager
-features:
-1. master password can be forcibly removed from session memory.
-2. passwords are decrypted one at a time.
-3. app has banner displaying bool - is master password currently in session memory?
-4. decryptions have limited lifespans in session. 
-5. window includes log of recent actions. 
+# 🔐 Stateless Password Manager
 
-as of 6/20/25:
+A local-only, session-based password manager that prioritizes ephemeral access and strong encryption.
 
-app currently:
-1. hardcodes location of config file, and is OS-agnostic
-2. forces user to define a filepath for encrypted file if it doesnt already exist.
-3. if user does not define a filepath, script closes.
-4. encrypts with aes-cbc 256 and pbkdf for 600k iterations
-5. labels appear in a dropdown.
+---
 
-next things to do:
+## ✅ Features
 
-2. finalize decryption
-4. functionality to add a password.
-5. functionality to rm a password.
-6. functionality to generate a new password for the user, where they
-   can choose length. will force alphanumeric with special characters.
-   probably use os.urandom for maximal entropy/domain space  
-7. ability to import from flashdrive for porting to another machine
+- One-password-at-a-time decryption model for enhanced security.
+- Master password **never saved** — can be forcibly removed from session memory at any time.
+- Passwords decrypted in-session have a **limited lifespan**.
+- UI displays:
+  - ✅ Whether master password is in session memory
+  - 📝 A running log of the last 5 actions
+- Simple dropdown UI to select from stored labels.
+
+---
+
+## 📦 Current Capabilities (as of 6/20/25)
+
+1. OS-agnostic: config file location is hardcoded but dynamically determined per platform.
+2. Forces user to define a filepath for the encrypted CSV at setup.
+3. If no valid file is defined, the app exits.
+4. Encryption uses:
+   - `AES-256-CBC`
+   - Salted PBKDF2 with **600,000 iterations**
+5. Saved labels appear in a dropdown for easy selection.
+
+---
+
+## 🚧 Roadmap / TODO
+
+- [ ] Finalize **decryption display** and auto-clear logic
+- [ ] Add functionality to **store new passwords**
+- [ ] Add ability to **remove existing passwords**
+- [ ] Add password **generator**
+  - User-specified length
+  - Enforces alphanumeric + special characters
+  - Uses `os.urandom()` for high entropy
+- [ ] Add functionality to **import/export from flash drive** for use on other machines
+
+---
+
+## 🛡️ Philosophy
+
+> This manager is built to avoid long-term persistence. Nothing sensitive is stored unencrypted, and decrypted secrets vanish quickly after viewing. No external services, no database, no tracking — just you and your keys.
+
+
    
