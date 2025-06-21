@@ -31,7 +31,6 @@ A local-only, session-based password manager that prioritizes ephemeral access a
 ## Roadmap / TODO
 
 - [ ] Finalize **decryption display** and auto-clear logic
-- [ ] Add functionality to **store new passwords**
 - [ ] Add ability to **remove existing passwords**
 - [ ] Add password **generator**
   - User-specified length
