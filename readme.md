@@ -1,4 +1,4 @@
-#  Stateless Password Manager
+#Stateless Password Manager
 
 A local-only, session-based password manager that prioritizes ephemeral access and strong encryption.
 
