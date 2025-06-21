@@ -1,22 +1,22 @@
-# 🔐 Stateless Password Manager
+#  Stateless Password Manager
 
 A local-only, session-based password manager that prioritizes ephemeral access and strong encryption.
 
 ---
 
-## ✅ Features
+## Features
 
 - One-password-at-a-time decryption model for enhanced security.
 - Master password **never saved** — can be forcibly removed from session memory at any time.
 - Passwords decrypted in-session have a **limited lifespan**.
 - UI displays:
-  - ✅ Whether master password is in session memory
-  - 📝 A running log of the last 5 actions
+  - Whether master password is in session memory
+  - A running log of the last 5 actions
 - Simple dropdown UI to select from stored labels.
 
 ---
 
-## 📦 Current Capabilities (as of 6/20/25)
+## Current Capabilities (as of 6/20/25)
 
 1. OS-agnostic: config file location is hardcoded but dynamically determined per platform.
 2. Forces user to define a filepath for the encrypted CSV at setup.
@@ -28,7 +28,7 @@ A local-only, session-based password manager that prioritizes ephemeral access a
 
 ---
 
-## 🚧 Roadmap / TODO
+## Roadmap / TODO
 
 - [ ] Finalize **decryption display** and auto-clear logic
 - [ ] Add functionality to **store new passwords**
@@ -41,7 +41,7 @@ A local-only, session-based password manager that prioritizes ephemeral access a
 
 ---
 
-## 🛡️ Philosophy
+##  Philosophy
 
 > This manager is built to avoid long-term persistence. Nothing sensitive is stored unencrypted, and decrypted secrets vanish quickly after viewing. No external services, no database, no tracking — just you and your keys.
 
