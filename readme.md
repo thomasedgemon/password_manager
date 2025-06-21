@@ -4,18 +4,6 @@ A local-only, session-based password manager that prioritizes ephemeral access a
 
 ---
 
-## Features
-
-- One-password-at-a-time decryption model for enhanced security.
-- Master password **never saved** — can be forcibly removed from session memory at any time.
-- Passwords decrypted in-session have a **limited lifespan**.
-- UI displays:
-  - Whether master password is in session memory
-  - A running log of the last 5 actions
-- Simple dropdown UI to select from stored labels.
-
----
-
 ## Current Capabilities (as of 6/20/25)
 
 1. OS-agnostic: config file location is hardcoded but dynamically determined per platform.
@@ -25,6 +13,11 @@ A local-only, session-based password manager that prioritizes ephemeral access a
    - `AES-256-CBC`
    - Salted PBKDF2 with **600,000 iterations**
 5. Saved labels appear in a dropdown for easy selection.
+6. Per-password decryption
+7. Master password cleared from session memory automatically after every action
+8. Running log of the last five actions
+9. Dropdown UI for encrypted labels
+10. Time-based auto clearing of decrypted passwords
 
 ---
 
