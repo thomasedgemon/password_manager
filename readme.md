@@ -12,6 +12,7 @@ A local-only, session-based password manager that prioritizes ephemeral access a
 4. Encryption uses:
    - `AES-256-CBC`
    - Salted PBKDF2 with **600,000 iterations**
+   - os.urandom for RNG
 5. Saved labels appear in a dropdown for easy selection.
 6. Per-password decryption
 7. Master password cleared from session memory automatically after every action
