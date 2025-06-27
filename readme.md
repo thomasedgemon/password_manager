@@ -19,6 +19,7 @@ A local-only, session-based password manager that prioritizes ephemeral access a
 8. Running log of the last five actions
 9. Dropdown UI for encrypted labels
 10. Time-based auto clearing of decrypted passwords
+11. 16 character password generation with os.urandom
 
 ---
 
@@ -26,11 +27,11 @@ A local-only, session-based password manager that prioritizes ephemeral access a
 
 - [ ] Finalize **decryption display** and auto-clear logic
 - [ ] Add ability to **remove existing passwords**
-- [ ] Add password **generator**
   - User-specified length
   - Enforces alphanumeric + special characters
   - Uses `os.urandom()` for high entropy
 - [ ] Add functionality to **import/export from flash drive** for use on other machines
+
 
 ---
 
